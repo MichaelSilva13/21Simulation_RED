@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="TraCI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/log4j-api-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/log4j-core-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/traci.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/xercesImpl-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/xml-apis-1.4.01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/ressources/librairies/traci.jar!/" />
+    </SOURCES>
+  </library>
+</component>

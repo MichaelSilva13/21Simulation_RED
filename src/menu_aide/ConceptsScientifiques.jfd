@@ -1,0 +1,177 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Concepts Scientifiques"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tbPaConcepts"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane1"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"width": 1130
+						"height": 550
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Véhicules Électriques"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel2"
+					add( new FormComponent( "javax.swing.JTextPane" ) {
+						name: "textPane2"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 1126
+						"height": 546
+						"x": 5
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "SUMO"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel3"
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images8"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 150
+						"y": 240
+						"width": 855
+					} )
+					add( new FormComponent( "javax.swing.JTextPane" ) {
+						name: "textPane3"
+						"contentType": "text/html"
+						"text": "<html>\n  <head>\n\n  </head>\n  <body>\n    <h2>\n\t\t\tTraCI</h2>\n\t\t<h4>\n\t\t\t(Traffic Control Interface)</h4>\n\t\t<p>\n\t\t\tNous utilisons TraCI afin de communiquer avec l&#39;application SUMO. Notre application ne peut communiquer directement avec SUMO alors il est n&eacute;cessaire d&#39;avoir un interm&eacute;diaire pour avoir les informations dont nous avons besoin.</p>\n\t\t<p>\n\t\t\tNous avons besoin de TraCI afin de conna&icirc;tre la position des v&eacute;hicules et afin de pouvoir donner une nouvelle route aux v&eacute;hicules lorsque nous leur avons trouv&eacute; une borne adapt&eacute;e &agrave; leurs besoins.</p>\n\t\t<p>\n\t\t\tTraCI nous permet donc de :</p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\tSavoir en tout temps les positions des v&eacute;hicules</li>\n\t\t\t<li>\n\t\t\t\tRecevoir les vitesses des v&eacute;hicules</li>\n\t\t\t<li>\n\t\t\t\tEnvoyer un itin&eacute;raire pr&eacute;cis &agrave; un v&eacute;hicule</li>\n\t\t</ul>\n  </body>\n</html>\n"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 1126
+						"height": 546
+						"x": 5
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "TraCI"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel4"
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images1"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"y": 100
+						"height": 40
+						"width": 315
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images2"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 20
+						"height": 12
+						"x": 50
+						"y": 180
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images3"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 20
+						"height": 16
+						"x": 50
+						"y": 195
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images4"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 31
+						"height": 16
+						"x": 50
+						"y": 214
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images5"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 16
+						"height": 20
+						"x": 50
+						"y": 230
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images6"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 400
+						"height": 85
+						"x": 0
+						"y": 335
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images7"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 38
+						"height": 24
+						"x": 50
+						"y": 448
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images9"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 95
+						"height": 40
+						"x": 330
+						"y": 100
+					} )
+					add( new FormComponent( "javax.swing.JTextPane" ) {
+						name: "textPane4"
+						"editable": false
+						"contentType": "text/html"
+						"text": "<html>\n  <head>\n\n  </head>\n  <body>\n    <h2>\n\t\t\t&Eacute;quations Math&eacute;matiques</h2>\n\t\t<h3>\n\t\t\tCalcul du d&eacute;lai d&#39;attente :</h3>\n\t\t<p>\n\t\t\tAfin de calculer le d&eacute;lai d&#39;attente d&#39;un v&eacute;hicule &eacute;lectrique avant d&#39;&ecirc;tre satisfait nous utilisons la formule math&eacute;matique suivante :</p>\n\t\t<h1>\n\t\t\t<span id=\"docs-internal-guid-a1f4058d-5596-6c20-2359-57a53833385c\"><span style=\"text-decoration: none; font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DD_%7BVE_i%7D%3Da_i%2BC_i%2BFa_i%2BR\" style=\"text-decoration:none;\"><img height=\"16\" src=\"https://lh6.googleusercontent.com/HW8dY4TS1JPQQNHTfDEgWRgBpX4Vmr1M8T3r_q-bMf40MI12NTHfiWZj_F8btOx8byPpxESiQ26F9U6M6pcCR5T_hWpTgjPSh5O3BjziLxO-6TLLxQUEU19if2MBJ0WodqUvr9ge\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap d sub cap v cap e sub i   equals A sub i  plus cap c sub i  plus cap f A sub i  plus cap r\" width=\"201\" /></a>, </span></span><a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7D%5Cforall%20i%20%5Cin%20N%0A\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"12\" src=\"https://lh3.googleusercontent.com/Esg2NSXRfPG6FG1WtTWq50vxqT3SaIf9oqbiIE8cMPnoSme9LTHoEZPudBBjkyOR0UEtV0w_uGyOStrO-5WGEwnZCvR2J3DwOkAbnK8_wIWZf3y4WiOLQtlM-uyAwr9tq0uiF1-_\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"for all i small element of cap n\" width=\"51\" /></span></a></h1>\n\t\t<p>\n\t\t\t<span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">o&ugrave;</span><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><span class=\"Apple-tab-span\" style=\"white-space:pre;\"> </span></span></p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\t<a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7Da_i%5C%20\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"8\" src=\"https://lh5.googleusercontent.com/p_dO1uMHt3mi7f5-KBLo44DypBPdNCNn_DpwDD3VTr-FbvIZp3lFTjYtmqL40aA-iJPy14aIqjrY1mkwczY76NhD9l9_RELpiIrvybwd-TjSNJcSFKITvLkwOk-kXBRd_qr0ILd_\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" width=\"13\" /></span></a><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> &nbsp;: le temps d&rsquo;arriv&eacute;e du v&eacute;hicule &eacute;lectrique</span></li>\n\t\t\t<li>\n\t\t\t\t<a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DC_i\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"12\" src=\"https://lh6.googleusercontent.com/TsykazsM6X4TixIgTyW_kGLVdCY8perTNrItrTCkG3494yDSPU19TO5MiDE09oSv0rD43ZgfjOLys3Ow_R0_o07dObkEVSBt5NbgDRQ1FSzkvBo59lv3F0z66WYAqeulSy7irMLg\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap c sub i \" width=\"16\" /></span></a><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> : le temps de chargement du v&eacute;hicule &eacute;lectrique</span></li>\n\t\t\t<li>\n\t\t\t\t<a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DFa_i\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"12\" src=\"https://lh5.googleusercontent.com/c6aaqmrt4T6MDeRR6t-wLKH4E_gL2HQKR1YD4n6xGcc0D-3rc9aU-7RxQfxP1T0ZZVHpyFz1ADGcgs18uvHN-9NBxt-hhA5L6Flf-rwIXaLcdueLYRc32QluK2CMwjHQ3tEiqMDo\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap f A sub i \" width=\"27\" /></span></a><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> : le temps d&rsquo;attente dans la file d&rsquo;attente du v&eacute;hicule &eacute;lectrique</span></li>\n\t\t\t<li>\n\t\t\t\t<a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DR\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"11\" src=\"https://lh5.googleusercontent.com/_UfLYr-qGmi0w1MQt6MHOu1qX9GrumzDXh9xpbsPH0cIGdnm2roJjfcujDUIW4AwtvJBa0m515vxZiMO6saM7AZKnHHEoDjoLNNQkjS-TCIBk4GMiigPplwvTmZjNln3TeNH9ayI\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap r\" width=\"12\" /></span></a><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> : le temps de recherche afin de trouver la borne choisie</span></li>\n\t\t</ul>\n\t\t<h3>\n\t\t\tDeux fonctions objectives :</h3>\n\t\t<p>\n\t\t\tAfin d&#39;avoir le meilleur contexte possible pour nos utilisateurs, nous visons les deux fonctions objectives suivantes :</p>\n\t\t<p>\n\t\t\t<span id=\"docs-internal-guid-a1f4058d-5599-9db4-767b-188f7042123e\"><a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DMin%5Cleft(D_%7BVE_%7Bi%2C%5C%20i%5C%20%5Cin%5C%20N%7D%7D%5Cright)\" style=\"text-decoration:none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"23\" src=\"https://lh4.googleusercontent.com/xG5HomH0HEMxkYlDzfWC5UKB7dJ1DgyjZSky28FV0exMHKJJaP5lkGIj3zF77RTy_6pjGHPfqsXhyi0jWGgBAbU32cAcSYE9seft_4hFt8vZqCkixwEAFAA4migudfp4y_-TW8Dj\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap m i n left parenthesis cap d sub cap v cap e sub i comma \\  i \\  small element of \\  cap n   right parenthesis\" width=\"139\" /></span></a></span></p>\n\t\t<p>\n\t\t\t<span style=\"text-decoration: none; font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DMin%5Cleft%5Bdiff_%7Bi%5C%20%5Cne%5C%20j%2C%5C%20j%5Cin%20N%5Cleft(Ce_i%5Cright)%2C%5C%20i%2C%5C%20j%5C%20%5Cle%5Cleft%7CM%5Cright%7C%7D%5Cleft%7CE_%7BCe_i%7D-E_%7BCe_j%7D%5Cright%7C%5Cright%5D\" style=\"text-decoration: none;\"><img height=\"24\" src=\"https://lh4.googleusercontent.com/ZgrRTk9bdIiOpWVawSjCLgdQQXldQn7l8AOljSV1qDQW5xC1zaKVj9z1RrE1GUGX6YLL8UFnic1K466hBcWVFQ4xYtRu9-aX8sKZRrH52fFkoTJZESm8hGR06OsjZpiJcn56YkIq\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap m i n left squared bracket d i f f sub i \\  not equals \\  j comma \\  j small element of cap n left parenthesis cap c e sub i  right parenthesis comma \\  i comma \\  j \\  less than or equals vertical line cap m vertical line  vertical line cap e sub cap c e sub i   minus cap e sub cap c e sub j   vertical line right squared bracket\" width=\"372\" /></a></span></p>\n\t\t<p>\n\t\t\t<span style=\"text-decoration: none; font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"></span><span style=\"font-family: 'Times New Roman'; font-size: 11pt; white-space: pre-wrap;\">o&ugrave;</span></p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\t<a href=\"http://api.gmath.guru/cgi-bin/gmath?%5Cdpi%7B480%7DE_%7BCe_i%7D\" style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"><img height=\"16\" src=\"https://lh4.googleusercontent.com/7Ky_xMjihyhhfS9fpkYyl8_ExxJidlL558HKxJAoN2mjJMPXMuqTf28R5-DUl_ED1hpD04jmlnyC5nmAgn5rECpQYFWftvsOPkmjJU3uMbi0g3KGlxZFi9XglpLzJ0HuMXMTYuRM\" style=\"border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);\" title=\"cap e sub cap c e sub i  \" width=\"33\" /></span></a><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> : l&rsquo;&eacute;nergie de la centrale &eacute;lectrique</span></li>\n\t\t\t<li>\n\t\t\t\t<span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-style: italic; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">i, j</span><span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\"> : des centrales dans la m&ecirc;me port&eacute;e (dans un m&ecirc;me rayon par rapport au v&eacute;hicule) </span></li>\n\t\t</ul>\n\t\t<p>\n\t\t\t<span style=\"font-size: 11pt; font-family: 'Times New Roman'; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">C&#39;est deux fonctions nous permettent de minimiser le d&eacute;lai d&#39;attente et de diminuer la diff&eacute;rence d&#39;&eacute;nergie entre les centrales &eacute;lectriques. </span></p>\n\t\t<p>\n\t\t\t<font face=\"Times New Roman\"><span style=\"font-size: 12px; white-space: pre-wrap;\">1. </span></font><span style=\"color: rgb(51, 51, 51); font-family: 'Times New Roman'; font-size: 8pt; white-space: pre-wrap; background-color: rgb(255, 255, 255); text-align: justify;\">Jihene Rezgui, Soumaya Cherkaoui, &ldquo;Smart Charge Scheduling for EVs based on Two-Way Communication </span><span style=\"color: rgb(51, 51, 51); font-family: 'Times New Roman'; font-size: 8pt; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">accepted&rdquo;, Publication ICC Paris, 2017</span></p>\n  </body>\n</html>\n"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 1126
+						"height": 546
+						"x": 0
+						"y": -5
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Équations Mathématiques"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel5"
+					add( new FormComponent( "javax.swing.JTextPane" ) {
+						name: "textPane5"
+						"contentType": "text/html"
+						"text": "<html>\n  <head>\n\n  </head>\n  <body>\n    <h2>\n\t\t\tAlgorithme de Dijkstra</h2>\n\t\t<p>\n\t\t\t<span style=\"font-family:times new roman,times,serif;font-size: 18pt\">L&#39;algorithme de Dijkstra se base sur la th&eacute;orie des graphes utilis&eacute;e en math&eacute;matiques et en informatiques. Un graphe est un mod&egrave;le abstrait de dessin de r&eacute;seau reliant des objets. Il est constitu&eacute; de &laquo; points &raquo; g&eacute;n&eacute;ralement appel&eacute;s <em>sommets</em>&nbsp; et de &laquo; liens &raquo; entre ces points g&eacute;n&eacute;ralement appel&eacute;s&nbsp;<em>ar&ecirc;tes</em>. Les algorithmes bas&eacute;s sur cette th&eacute;orie permmettent de r&eacute;soudre de nombreux probl&egrave;mes de diff&eacute;rent domaine tel le th&eacute;or&egrave;me des quatres couleurs. </span></p>\n\t\t<p>\n\t\t\t<span style=\"font-family:times new roman,times,serif;font-size: 18pt\">Dans notre cas, celui qui nous aide est l&#39;algorithme de Dijkstra. Celui-ci sert &agrave; r&eacute;soudre le probl&egrave;me du chemin le plus court. Dans notre contexte, il fonctionnera comme suit :</span></p>\n\t\t<p>\n\t\t\t<span style=\"font-family:times new roman,times,serif;font-size: 18pt\">Lorsqu&rsquo;une demande sera effectu&eacute;e celle-ci sera prise en charge par notre m&eacute;canisme de recherche de borne qui peut &ecirc;tre modifi&eacute; gr&acirc;ce &agrave; l&rsquo;ordre de priorit&eacute; des contraintes s&eacute;lectionn&eacute;es pr&eacute;alablement (d&eacute;lai d&rsquo;attente, distance de la borne, r&eacute;partition de la charge), appel&eacute; ED (Enhanced-Dijkstra) .</span></span></p>\n\t\t<p>\n\t\t\t<span style=\"font-family:times new roman,times,serif;font-size: 18pt\"><span id=\"docs-internal-guid-a1f4058d-55b2-9ab9-3eaf-9c4bb2847b97\">Notre m&eacute;canisme, ED, se basera sur l&rsquo;algorithme de Dijkstra que nous modifierons pour s&rsquo;adapter &agrave; nos besoins. Celui-ci nous permettra de trouver les bornes pouvant &ecirc;tre atteinte par le v&eacute;hicule ainsi que le chemin le plus court jusqu&rsquo;&agrave; celle-ci. En effet, celui-ci a &eacute;t&eacute; con&ccedil;us pour trouver le chemin le plus court dans un graphe. Dans notre situation, la carte du r&eacute;seau routier est notre graphe. Les intersections de la route sont les noeuds et les routes sont les liens. ED d&eacute;termine le meilleur chemin en additionnant les poids allou&eacute;s aux routes entre deux intersections. Dans notre contexte, le poids des routes sera d&eacute;termin&eacute; par leurs distances. Par contre, nous nous limiterons pas seulement &agrave; trouver le chemin le plus court. Nous avons modifi&eacute; celui-ci, car il faut prendre en compte une distance maximale atteignable par le v&eacute;hicule d&eacute;pendamment de son niveau de charge ainsi que son point de d&eacute;part dans le graphe. Avec ces informations, ED cherche, dans une liste d&rsquo;intersections, celles qui se trouvent &agrave; une distance &eacute;gale ou inf&eacute;rieure &agrave; la distance donn&eacute;e. Ainsi, ED trouve les bornes auxquels un v&eacute;hicule &eacute;lectrique peut se rendre. La distance donn&eacute;e &agrave; ED sera la distance pouvant encore &ecirc;tre parcourue par le v&eacute;hicule.</span></span></span></p>\t\n  </body>\n</html>\n"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 1126
+						"height": 546
+						"x": 5
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Algorithme de Dijkstra"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 60
+				"width": 1145
+				"height": 585
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblConceptsSci"
+				"text": "Concepts Scientifiques"
+				"font": new java.awt.Font( "AppleGothic", 0, 30 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 425
+				"y": 20
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1165, 675 )
+		} )
+	}
+}

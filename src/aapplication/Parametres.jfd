@@ -1,0 +1,281 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Simulation d'un Réseau électrique distibué (R.E.D.)"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panePriorite"
+				"border": new javax.swing.border.TitledBorder( "Ordre de priorité" )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmboxTop"
+					"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Répartition des ressources"
+						addElement( "Répartition des ressources" )
+						addElement( "Satisfaction des clients" )
+						addElement( "Distance avec la borne" )
+					}
+					addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxTopPropertyChange", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 50
+					"y": 65
+					"width": 230
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmboxMid"
+					"model": #DefaultComboBoxModel0
+					"selectedIndex": 1
+					addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxMidPropertyChange", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 230
+					"height": 30
+					"x": 50
+					"y": 125
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmboxBot"
+					"model": #DefaultComboBoxModel0
+					"selectedIndex": 2
+					addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxBotPropertyChange", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 230
+					"height": 30
+					"x": 50
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "1."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 70
+					"width": 20
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "2."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 20
+					"height": 20
+					"x": 30
+					"y": 130
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "3."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 20
+					"height": 20
+					"x": 30
+					"y": 195
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 60
+				"width": 290
+				"height": 270
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "sldrspnVehicules"
+				"border": &TitledBorder0 new javax.swing.border.TitledBorder( "Paramètres de la simulation" )
+				add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+					name: "compValEV"
+					"max": 100.0
+					"step": 0.9999999999
+					"value": 25.0
+					"border": new javax.swing.border.TitledBorder( "% de véhicules électriques" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 30
+					"height": 70
+				} )
+				add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+					name: "compValBornes"
+					"border": new javax.swing.border.TitledBorder( "%Bornes de recharge occupées" )
+					"step": 0.9999999
+					"max": 100.0
+					"value": 30.0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 110
+					"height": 70
+					"width": 270
+				} )
+				add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+					name: "compValDemandes"
+					"border": new javax.swing.border.TitledBorder( "Fréquence de demandes" )
+					"max": 100.0
+					"step": 1.0
+					"value": 25.0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 185
+					"height": 70
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 290
+				"height": 270
+				"x": 305
+				"y": 60
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panePriorite3"
+				"border": #TitledBorder0
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbxEGlobale"
+					"actionCommand": "cmbxEnergie"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Élevé"
+						addElement( "Élevé" )
+						addElement( "Moyen" )
+						addElement( "Faible" )
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 40
+					"width": 265
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Énergie globale du réseau"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbxBalance"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Équilibré"
+						addElement( "Équilibré" )
+						addElement( "Déséquilibré" )
+					}
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cmbxBalanceItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 142
+					"width": 260
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Répartition de l'énergie du réseau"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 122
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtEnergieGlobal"
+					"text": "Correspond au niveau d'énergie dans l'ensemble du réseau au début de la simulation"
+					"wrapStyleWord": true
+					"lineWrap": true
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 70
+					"width": 265
+					"height": 50
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtEnergieEquilibre"
+					"text": "Correspond à la distribution de l'énergie dans le réseau. Par exemple, si une centrale a 100% de l'énergie versus une autre a 50% de son énergie de disponible."
+					"wrapStyleWord": true
+					"lineWrap": true
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 270
+					"height": 90
+					"x": 10
+					"y": 170
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 290
+				"height": 270
+				"x": 600
+				"y": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTitre"
+				"text": "Veuillez définir les paramètres de la simulation"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 225
+				"y": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btmOptimiser"
+				"text": "Optimiser"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btmOptimiserActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 195
+				"y": 330
+				"width": 250
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDemarrer"
+				"text": "Démarrer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 440
+				"y": 330
+				"width": 235
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnQuitter"
+				"text": "Quitter"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnQuitterActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 250
+				"height": 40
+				"x": 320
+				"y": 370
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Aide"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mitmInfo"
+						"text": "À propos"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "aProposActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mitmGuide"
+						"text": "Guide d'utilisation"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mitmGuideActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mitmSci"
+						"text": "Concepts Scientifiques"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mitmSciActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator1"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemPre"
+						"text": "Préalables"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemPreActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 460 )
+		} )
+	}
+}

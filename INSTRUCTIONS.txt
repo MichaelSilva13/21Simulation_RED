@@ -1,0 +1,18 @@
+INSTRUCTION POUR L'INSTALLATION DE SUMO (Simulation of Urban MObility)
+
+Nécessaire pour le fonctionnement de l'application
+
+1.Télécharger l'executable sur le site suivant : https://sourceforge.net/projects/sumo/
+
+2.S'assurer de télécharger la version 0.28.0
+
+3.Lancer l'installateur
+
+4.Installer SUMO sur un disque local
+
+5.Bien vérifier que la case à cocher pour ajouter SUMO dans la variable d'environnement PATH est cochée
+(nécessaire pour localiser l'exécutable)
+
+6.Redémarrer eclipse ou tout autre JDE si l'application était déjà ouverte
+
+Vous pouvez maintenant commencer une simulation!!

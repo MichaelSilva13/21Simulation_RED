@@ -1,0 +1,9 @@
+<additionals>
+    <chargingStation id="chargingStation_-gneE45_0_5" lane="-gneE45_0" startPos="4.50" endPos="6.50" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE66_0_0" lane="-gneE66_0" startPos="19.26" endPos="21.26" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE78_0_6" lane="-gneE78_0" startPos="41.73" endPos="43.73" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE59_0_1" lane="gneE59_0" startPos="15.92" endPos="17.92" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE62_0_2" lane="gneE62_0" startPos="19.11" endPos="21.11" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE73_0_4" lane="gneE73_0" startPos="2.35" endPos="4.35" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE82_0_3" lane="gneE82_0" startPos="57.61" endPos="59.61" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+</additionals>

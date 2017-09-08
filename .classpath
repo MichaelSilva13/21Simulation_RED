@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="ressources"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/darcula.jar"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/log4j-api-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/log4j-core-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/traci.jar"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/xercesImpl-2.11.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="ressources/librairies/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="out/production/SCD-Simulation_Reseau_Electrique"/>
+</classpath>

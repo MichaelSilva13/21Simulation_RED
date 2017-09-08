@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Mon 20 Mar 12:23:04 2017 by Netedit Version 0.28.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netedit.exeConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/Users/gabrielletlim/Documents/ECOLE/CEGEP/SESSION4/PROGRAMMATION/routeTemporaire.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Users/gabrielletlim/Documents/ECOLE/CEGEP/SESSION4/PROGRAMMATION/routeTemporaire.net.xml"/>
+        <plain-output-prefix value="/Users/gabrielletlim/Desktop/routeTemporaire"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="0"/>
+    </processing>
+
+</configuration>
+-->
+
+<nodes version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <location netOffset="0.00,0.00" convBoundary="-37.69,2.14,137.28,94.93" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <node id="gneJ1" x="-35.67" y="64.69" type="traffic_light" tl="gneJ1"/>
+    <node id="gneJ10" x="4.85" y="2.17" type="traffic_light" tl="gneJ10"/>
+    <node id="gneJ11" x="44.21" y="61.07" type="traffic_light" tl="gneJ11"/>
+    <node id="gneJ12" x="42.91" y="91.75" type="traffic_light" tl="gneJ12"/>
+    <node id="gneJ13" x="100.07" y="26.77" type="unregulated"/>
+    <node id="gneJ14" x="69.54" y="61.22" type="traffic_light" tl="gneJ14"/>
+    <node id="gneJ15" x="67.37" y="79.16" type="priority"/>
+    <node id="gneJ16" x="96.16" y="80.46" type="traffic_light" tl="gneJ16"/>
+    <node id="gneJ17" x="93.99" y="94.93" type="traffic_light" tl="gneJ17"/>
+    <node id="gneJ18" x="69.83" y="40.81" type="priority"/>
+    <node id="gneJ19" x="100.65" y="42.55" type="traffic_light" tl="gneJ19"/>
+    <node id="gneJ2" x="5.28" y="89.58" type="traffic_light" tl="gneJ2"/>
+    <node id="gneJ20" x="99.35" y="62.81" type="traffic_light" tl="gneJ20"/>
+    <node id="gneJ21" x="130.61" y="61.79" type="traffic_light" tl="gneJ21"/>
+    <node id="gneJ23" x="137.17" y="5.17" type="dead_end"/>
+    <node id="gneJ24" x="125.56" y="94.08" type="unregulated"/>
+    <node id="gneJ25" x="-37.61" y="2.14" type="dead_end"/>
+    <node id="gneJ30" x="127.81" y="79.81" type="traffic_light" tl="gneJ30"/>
+    <node id="gneJ31" x="-37.69" y="2.98" type="dead_end"/>
+    <node id="gneJ33" x="-35.96" y="89.92" type="priority"/>
+    <node id="gneJ34" x="137.28" y="5.77" type="dead_end"/>
+    <node id="gneJ4" x="5.72" y="63.24" type="traffic_light" tl="gneJ4"/>
+    <node id="gneJ5" x="6.01" y="23.73" type="traffic_light" tl="gneJ5"/>
+    <node id="gneJ6" x="22.21" y="62.52" type="traffic_light" tl="gneJ6"/>
+    <node id="gneJ7" x="22.21" y="23.73" type="traffic_light" tl="gneJ7"/>
+    <node id="gneJ8" x="21.92" y="2.32" type="traffic_light" tl="gneJ8"/>
+</nodes>

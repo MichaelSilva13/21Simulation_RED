@@ -1,0 +1,35 @@
+<additionals>
+    <chargingStation id="chargingStation_-gneE447_0_48" lane="-gneE447_0" startPos="21.41" endPos="22.41" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE449_0_46" lane="-gneE449_0" startPos="5.93" endPos="6.93" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE454_0_31" lane="-gneE454_0" startPos="12.61" endPos="13.61" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE457_0_35" lane="-gneE457_0" startPos="3.09" endPos="4.09" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE491_0_50" lane="-gneE491_0" startPos="2.23" endPos="3.23" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE501_0_3" lane="-gneE501_0" startPos="0.96" endPos="1.96" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE510_0_4" lane="-gneE510_0" startPos="1.39" endPos="2.39" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE553_0_11" lane="-gneE553_0" startPos="3.09" endPos="4.09" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE575_0_10" lane="-gneE575_0" startPos="4.36" endPos="5.36" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE590_0_13" lane="-gneE590_0" startPos="1.07" endPos="2.07" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE592_0_12" lane="-gneE592_0" startPos="1.38" endPos="2.38" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE649_0_45" lane="-gneE649_0" startPos="22.07" endPos="23.07" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE650_0_44" lane="-gneE650_0" startPos="5.98" endPos="6.98" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE654_0_50" lane="-gneE654_0" startPos="9.69" endPos="10.69" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE656_0_42" lane="-gneE656_0" startPos="14.22" endPos="15.22" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE659_0_47" lane="-gneE659_0" startPos="11.73" endPos="12.73" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE663_0_18" lane="-gneE663_0" startPos="0.50" endPos="1.50" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE677_0_20" lane="-gneE677_0" startPos="4.07" endPos="5.07" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE695_0_26" lane="-gneE695_0" startPos="8.61" endPos="9.61" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE734_0_46" lane="-gneE734_0" startPos="4.85" endPos="5.85" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE746_0_28" lane="-gneE746_0" startPos="2.83" endPos="3.83" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_-gneE752_0_27" lane="-gneE752_0" startPos="10.68" endPos="11.68" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE451_0_46" lane="gneE451_0" startPos="10.77" endPos="11.77" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE490_0_0" lane="gneE490_0" startPos="1.78" endPos="2.78" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE526_0_9" lane="gneE526_0" startPos="15.98" endPos="16.98" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE529_0_8" lane="gneE529_0" startPos="3.07" endPos="4.07" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE530_0_6" lane="gneE530_0" startPos="1.73" endPos="2.73" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE584_0_14" lane="gneE584_0" startPos="5.08" endPos="6.08" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE597_0_16" lane="gneE597_0" startPos="7.36" endPos="8.36" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE655_0_45" lane="gneE655_0" startPos="5.80" endPos="6.80" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE667_0_19" lane="gneE667_0" startPos="2.47" endPos="3.47" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE689_0_21" lane="gneE689_0" startPos="5.58" endPos="6.58" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+    <chargingStation id="chargingStation_gneE692_0_24" lane="gneE692_0" startPos="15.70" endPos="16.70" power="22000.00" efficiency="0.95" chargeInTransit="0" chargeDelay="0"/>
+</additionals>

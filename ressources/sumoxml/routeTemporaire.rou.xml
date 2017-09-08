@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <vType accel="1.0" decel="5.0" id="Car" length="5.0" minGap="2.0" maxSpeed="13.0" sigma="0" />
+  
+  <flow id="flow_1-2_" from="-gneE62" to="-gneE60" begin="0" end="60" number="5"/>
+  	<flow id="flow_2-1_" from="gneE70" to="-gneE43" begin="0" end="60" number="5"/>
+	<flow id="flow_3-1_" from="gneE63" to="-gneE43" begin="0" end="60" number="5"/>
+	<flow id="flow_4-1_" from="gneE57" to="-gneE43" begin="0" end="60" number="5"/>
+	
+	<flow id="flow_1-3_" from="-gneE62" to="gneE80" begin="3" end="63" number="5"/>
+	<flow id="flow_2-3_" from="gneE70" to="gneE80" begin="3" end="63" number="5"/>
+	<flow id="flow_3-2_" from="gneE63" to="-gneE60" begin="3" end="63" number="5"/>
+	<flow id="flow_4-2_" from="gneE57" to="-gneE60" begin="3" end="63" number="5"/>
+	
+	<flow id="flow_1-4_" from="-gneE62" to="gneE49" begin="6" end="66" number="5"/>
+	<flow id="flow_2-4_" from="gneE70" to="gneE49" begin="6" end="66" number="5"/>
+	<flow id="flow_3-4_" from="gneE63" to="gneE49" begin="6" end="66" number="5"/>
+	<flow id="flow_4-3_" from="gneE57" to="gneE80" begin="6" end="66" number="5"/>
+	
+</routes>

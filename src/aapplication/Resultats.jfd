@@ -1,0 +1,107 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Résultats"
+			add( new FormComponent( "graphiques.Diagramme" ) {
+				name: "diagramUtilBor"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": sfield java.awt.Color gray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 70
+				"width": 990
+				"height": 285
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblResultats"
+				"text": "Résultats"
+				"font": new java.awt.Font( "AppleGothic", 0, 30 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 450
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblUtilBornes"
+				"text": "Utilisation des bornes (en pourcentage)"
+				"font": new java.awt.Font( "AppleGothic", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 40
+			} )
+			add( new FormComponent( "graphiques.Graph" ) {
+				name: "graphDelai"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 395
+				"width": 480
+				"height": 360
+			} )
+			add( new FormComponent( "graphiques.Graph" ) {
+				name: "graphEnergie"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 480
+				"height": 360
+				"x": 530
+				"y": 395
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblDelaiAttente"
+				"text": "Délai d'attente "
+				"font": new java.awt.Font( "AppleGothic", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblEnergie"
+				"text": "Énergie Globale du Réseau"
+				"font": new java.awt.Font( "AppleGothic", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 530
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnQuitter"
+				"text": "Quitter"
+				"font": new java.awt.Font( "AppleGothic", 0, 20 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnQuitterActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 420
+				"y": 760
+				"width": 190
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuAide"
+					"text": "Aide"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemAPropos"
+						"text": "À Propos"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemAProposActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemGuideUtil"
+						"text": "Guide d'Utilisation"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemGuideUtilActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemConceptsSc"
+						"text": "Concepts Scientifiques"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemConceptsScActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemConceptsScActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1035, 855 )
+		} )
+	}
+}

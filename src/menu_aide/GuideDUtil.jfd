@@ -1,0 +1,414 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Guide d'Utilisation"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblGuideUtil"
+				"text": "Guide d'Utilisation"
+				"font": new java.awt.Font( "AppleGothic", 0, 30 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 350
+				"y": 10
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tbGuideUtil"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "txtPaneOrdrePrio"
+							"text": "Dans la fenêtre des paramètres, ces trois listes déroulantes servent à définir l'ordre de priorité de l'algorithme de sélection de borne. Vous ne pourrez pas démarrer l'application si un paramètre est choisit à deux positions différentes"
+							"editable": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 85
+						"y": 25
+						"width": 420
+						"height": 90
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane1"
+							"text": "Les curseurs suivants servent à déterminer le nombre de véhicules électriques dans la simulation, le pourcentage de véhicules qui feront des demandes et le pourcentage de bornes occupées dans le réseau. "
+							"editable": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 200
+						"y": 460
+						"width": 415
+						"height": 80
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane2"
+							"text": "Les derniers paramètres, déterminés par des listes déroulantes influent sur le réseau de bornes. Vous pouvez modifier si le réseau aura un niveau d'énergie élevé, moyen ou faible. Puis, vous pourrez définir si l'énergie du réseau sera répartie à travers les centrales de manière égale ou non."
+							"editable": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 15
+						"y": 175
+						"width": 410
+						"height": 95
+					} )
+					add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+						name: "compValEV"
+						"max": 100.0
+						"step": 0.9999999999
+						"value": 25.0
+						"border": new javax.swing.border.TitledBorder( "% de véhicules électriques" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 270
+						"height": 70
+						"x": 625
+						"y": 335
+					} )
+					add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+						name: "compValBornes"
+						"border": new javax.swing.border.TitledBorder( "%Bornes de recharge occupées" )
+						"step": 0.9999999
+						"max": 100.0
+						"value": 30.0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 270
+						"height": 70
+						"x": 625
+						"y": 415
+					} )
+					add( new FormComponent( "composantsperso.ComposantValeurs" ) {
+						name: "compValDemandes"
+						"border": new javax.swing.border.TitledBorder( "Fréquence de demandes" )
+						"max": 100.0
+						"step": 1.0
+						"value": 25.0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 270
+						"height": 70
+						"x": 625
+						"y": 490
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panePriorite"
+						"border": new javax.swing.border.TitledBorder( "Ordre de priorité" )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cmboxTop"
+							"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+								selectedItem: "Répartition des ressources"
+								addElement( "Répartition des ressources" )
+								addElement( "Satisfaction des clients" )
+								addElement( "Distance avec la borne" )
+							}
+							addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxTopPropertyChange", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 30
+							"y": 50
+							"width": 230
+							"height": 30
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cmboxMid"
+							"model": #DefaultComboBoxModel0
+							"selectedIndex": 1
+							addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxMidPropertyChange", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 230
+							"height": 30
+							"x": 30
+							"y": 110
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cmboxBot"
+							"model": #DefaultComboBoxModel0
+							"selectedIndex": 2
+							addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmboxBotPropertyChange", true ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 230
+							"height": 30
+							"x": 30
+							"y": 175
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "1."
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 10
+							"y": 55
+							"width": 20
+							"height": 20
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "2."
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 20
+							"height": 20
+							"x": 10
+							"y": 115
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "3."
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 20
+							"height": 20
+							"x": 10
+							"y": 180
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 265
+						"height": 240
+						"x": 545
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cmbxBalance"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Équilibré"
+							addElement( "Équilibré" )
+							addElement( "Déséquilibré" )
+						}
+						addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cmbxBalanceItemStateChanged", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 260
+						"height": 26
+						"x": 195
+						"y": 360
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Répartition de l'énergie du réseau"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 206
+						"height": 16
+						"x": 200
+						"y": 340
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cmbxEGlobale"
+						"actionCommand": "cmbxEnergie"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Élevé"
+							addElement( "Élevé" )
+							addElement( "Moyen" )
+							addElement( "Faible" )
+						}
+						addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "cmbxEGlobalePropertyChange", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 265
+						"height": 26
+						"x": 200
+						"y": 300
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Énergie globale du réseau"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 159
+						"height": 16
+						"x": 200
+						"y": 280
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Fenêtre Paramètres"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Redémarrer/Optimiser"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 60
+						"y": 220
+						"width": 315
+						"height": 120
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane4"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane3"
+							"text": "Voici les boutons qui seront utilisés lors de la simulation"
+							"editable": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 215
+						"y": 25
+						"width": 485
+						"height": 40
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane5"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane4"
+							"text": "Redmémarrer sert a retourner à la fenêtre des paramètres et de quitter la simulation. la fonction optimiser sert à définir des paramètres offrant des résulatats optimaux."
+							"editable": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 15
+						"y": 85
+						"width": 420
+						"height": 135
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "Démarrer"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 20
+						"y": 480
+						"width": 345
+						"height": 90
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane6"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane5"
+							"text": "Ce bouton sert à débuter la simulation et l'animation de celle-ci"
+							"editable": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 9, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 15
+						"y": 355
+						"width": 330
+						"height": 115
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "Terminer"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 505
+						"y": 200
+						"width": 335
+						"height": 115
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane7"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane6"
+							"text": "Termine la simulation et arrête l'animation de celle-ci"
+							"editable": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 515
+						"y": 90
+						"width": 310
+						"height": 100
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane8"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane7"
+							"text": "Permet de quitter l'application"
+							"editable": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 14, false )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 515
+						"y": 340
+						"width": 310
+						"height": 90
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "Quitter"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 495
+						"y": 435
+						"width": 355
+						"height": 110
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Boutons"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane9"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane8"
+							"text": "Lors de la simulation, vous pourrez intéragir avec celle-ci. Il est possible de zoomer grâce à la roulette. Il est d'autant plus possible de cliqué sur un véhicule ou une Borne. Les informations de l'objet cliqué seront affichés dans une zone de texte sous l'animation. Vous pouvez aussi déplacer la carte dans le composant de l'animation en appuyant enfoncé le clique de la souris et en déplaçant celle-ci."
+							"editable": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 20
+						"y": 25
+						"width": 420
+						"height": 140
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane10"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane9"
+							"text": "Le graphique démontre au choix la moyenne du délai d'attente jusqu'à la fin du chargement lors de la simulation. Ou bien, vous pouvez voir l'énegie totale du réseau des centrales."
+							"editable": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 265
+						"width": 300
+						"height": 95
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane11"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane10"
+							"text": "À droite de la simulation vous pourrez voir des informations sur la simulation dont l'énergie des centrales de la simulation. Plus bas, se trouve plusieurs options. Vous pouvez décider de retiré les images des véhicules ou des bornes, ceux-ci seront remplacé par des rectangle de leurs couleurs respectives. Vous pouvez aussi réinitialiser les déplacement fait à la simulation en appuyant sur le bouton en dessous. "
+							"editable": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 485
+						"width": 685
+						"height": 75
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images4"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 470
+						"y": 25
+						"height": 200
+						"width": 435
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images5"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 340
+						"y": 260
+						"height": 215
+						"width": 350
+					} )
+					add( new FormComponent( "dessinable.Images" ) {
+						name: "images6"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 715
+						"y": 265
+						"width": 195
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Fenêtre de simulation"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 55
+				"width": 925
+				"height": 605
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 950, 695 )
+		} )
+	}
+}

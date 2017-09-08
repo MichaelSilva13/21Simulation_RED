@@ -1,0 +1,464 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"autoRequestFocus": false
+			"title": "Simulation de réseau électrique distribué (R.E.D)"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "Paramètres de Simulation" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPri1"
+					"text": "1."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 50
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPri2"
+					"text": "2."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 50
+					"y": 55
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPri3"
+					"text": "3."
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 50
+					"y": 80
+					"width": 15
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTop"
+					"text": "Top"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 30
+					"width": 210
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblMid"
+					"text": "Milieu"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 55
+					"width": 210
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblBot"
+					"text": "Bas"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 80
+					"width": 210
+					"height": 15
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitreNBVehic"
+					"text": "Nombre de Véhicules :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 280
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitreNbVehicElect"
+					"text": "- Nombre de demandes effecutées :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 300
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitreNbBornes"
+					"text": "Nombre de bornes :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 280
+					"y": 70
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitreNbBusy"
+					"text": "- Bornes occupées :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 300
+					"y": 90
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblNbVehic"
+					"text": "0"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 440
+					"y": 30
+					"width": 55
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblNbVehicElect"
+					"text": "0"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 530
+					"y": 50
+					"width": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblBornes"
+					"text": "10"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 425
+					"y": 70
+					"width": 60
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblBusy"
+					"text": "2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 435
+					"y": 90
+					"width": 45
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 575
+				"width": 595
+				"height": 140
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.TitledBorder( "Information du véhicule/ borne" )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtaInfo"
+					"border": new javax.swing.border.BevelBorder( 1, null, null, null, null )
+					"lineWrap": true
+					"editable": false
+					"wrapStyleWord": true
+					"rows": 18
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 15
+					"width": 815
+					"height": 190
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 615
+				"y": 570
+				"width": 825
+				"height": 215
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTitre"
+				"text": "Simulation d'un réseau de bornes et de véhicules électriques"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 420
+				"y": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnQuitter"
+				"text": "Quitter"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnQuitterActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 290
+				"height": 30
+				"x": 310
+				"y": 750
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane2"
+				add( new FormComponent( "graphiques.Graph" ) {
+					name: "graphDelai"
+				}, new FormLayoutConstraints( null ) {
+					"title": "Délai d'attente"
+				} )
+				add( new FormComponent( "graphiques.Graph" ) {
+					name: "graphEnergie"
+				}, new FormLayoutConstraints( null ) {
+					"title": "Énergie globale du réseau"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 35
+				"width": 595
+				"height": 505
+			} )
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "pbarSim"
+				"foreground": new java.awt.Color( 68, 186, 28, 255 )
+				"maximum": 10000
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 550
+				"width": 1425
+				"height": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnArreter"
+				"text": "Arrêter"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnArreterActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 750
+				"width": 290
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnOptRed"
+				"text": "Optimiser/Redémarrer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnOptRedActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnOptRedActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 715
+				"width": 290
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDemarrer"
+				"text": "Démarrer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDemarrerActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 715
+				"width": 290
+				"height": 30
+			} )
+			add( new FormComponent( "maps.Map" ) {
+				name: "map1"
+				addEvent( new FormEvent( "java.awt.event.MouseWheelListener", "mouseWheelMoved", "map1MouseWheelMoved", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 615
+				"y": 55
+				"width": 820
+				"height": 490
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "paneInfo"
+				"border": new javax.swing.border.TitledBorder( "Info Simulation" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblCentraleA"
+					"text": "Centrale 1 :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 8
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblInfo1"
+					"text": "100%"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 83
+					"y": 40
+					"width": 40
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel3"
+					"background": new java.awt.Color( 5, 99, 176, 255 )
+					"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 125
+					"y": 35
+					"width": 30
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblCentrale2"
+					"text": "Centrale 2 : "
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 8
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblInfo2"
+					"text": "100%"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 83
+					"y": 95
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel4"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"border": #LineBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 30
+					"x": 125
+					"y": 90
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel5"
+					"background": new java.awt.Color( 138, 0, 255, 255 )
+					"border": #LineBorder0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 30
+					"x": 125
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblCentraleC"
+					"text": "Centrale 3 :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 8
+					"y": 155
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblInfo3"
+					"text": "100%"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 83
+					"y": 155
+				} )
+				add( new FormComponent( "dessinable.Images" ) {
+					name: "imgVehic"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 215
+					"width": 140
+					"height": 75
+				} )
+				add( new FormComponent( "dessinable.Images" ) {
+					name: "imgEV"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 330
+					"width": 140
+					"height": 75
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Véhicule normal"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Véhicule Électrique"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 300
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 1440
+				"y": 55
+				"height": 430
+				"width": 160
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "paneParam"
+				"border": new javax.swing.border.TitledBorder( "Paramètres" )
+				add( new FormComponent( "javax.swing.JSlider" ) {
+					name: "sldrVit"
+					"border": new javax.swing.border.TitledBorder( "Vitesse animation" )
+					"value": 2
+					"maximum": 10
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "sldrVitStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 20
+					"width": 150
+					"height": 70
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "chckbxIVehic"
+					"text": "Images véhicules"
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "chckbxIVehicActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 100
+					"width": 145
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "chckbxIBornes"
+					"text": "Images bornes"
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "chckbxIBornesActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 125
+					"width": 125
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnResetPos"
+					"text": "Recentrer la carte"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnResetPosActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 225
+					"width": 152
+					"height": 55
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtInfoImages"
+					"lineWrap": true
+					"editable": false
+					"text": "Enlever les images peut limiter le ralentissement de l'animation"
+					"wrapStyleWord": true
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -1, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 150
+					"width": 145
+					"height": 70
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 1440
+				"y": 495
+				"width": 160
+				"height": 290
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Aide"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemAPropos"
+						"text": "À propos"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "aProposActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemGuideUtil"
+						"text": "Guide d'utilisation"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemConceptsSci"
+						"text": "Concepts Scientifiques"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemConceptsSciActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "separator1"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItemPre"
+						"text": "Préalables"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemPreActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItemPreActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1600, 855 )
+		} )
+	}
+}
